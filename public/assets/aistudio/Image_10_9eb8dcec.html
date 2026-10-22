@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Trans Banyumas MaaS - Masuk ke Layanan</title>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts: Inter & Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config from Design System -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "tertiary-fixed-dim": "#ffb95f",
+            "outline": "#757684",
+            "surface-container-low": "#f2f3ff",
+            "inverse-on-surface": "#eef0ff",
+            "on-surface": "#131b2e",
+            "on-secondary-fixed-variant": "#005137",
+            "error": "#ba1a1a",
+            "on-error-container": "#93000a",
+            "on-primary-container": "#a8b8ff",
+            "surface-container-lowest": "#ffffff",
+            "inverse-primary": "#b8c4ff",
+            "on-tertiary": "#ffffff",
+            "on-secondary-fixed": "#002114",
+            "surface-container-high": "#e2e7ff",
+            "on-primary-fixed": "#001453",
+            "error-container": "#ffdad6",
+            "surface": "#faf8ff",
+            "outline-variant": "#c4c5d5",
+            "secondary-fixed-dim": "#68dba9",
+            "on-background": "#131b2e",
+            "on-tertiary-container": "#ffa929",
+            "on-tertiary-fixed": "#2a1700",
+            "secondary": "#006c4a",
+            "primary-fixed": "#dde1ff",
+            "surface-tint": "#3755c3",
+            "surface-variant": "#dae2fd",
+            "primary-fixed-dim": "#b8c4ff",
+            "on-primary": "#ffffff",
+            "tertiary": "#4c2e00",
+            "on-tertiary-fixed-variant": "#653e00",
+            "on-secondary": "#ffffff",
+            "surface-dim": "#d2d9f4",
+            "secondary-container": "#82f5c1",
+            "surface-container-highest": "#dae2fd",
+            "on-primary-fixed-variant": "#173bab",
+            "tertiary-container": "#6b4200",
+            "primary": "#00288e",
+            "secondary-fixed": "#85f8c4",
+            "on-surface-variant": "#444653",
+            "surface-bright": "#faf8ff",
+            "on-error": "#ffffff",
+            "tertiary-fixed": "#ffddb8",
+            "background": "#faf8ff",
+            "surface-container": "#eaedff",
+            "primary-container": "#1e40af",
+            "on-secondary-container": "#00714e",
+            "inverse-surface": "#283044"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-xs": "0.25rem",
+            "space-md": "0.75rem",
+            "space-xl": "1.5rem",
+            "space-2xl": "2rem",
+            "margin": "1rem",
+            "gutter": "1rem",
+            "space-sm": "0.5rem",
+            "gutter-mobile": "0.75rem",
+            "space-lg": "1rem",
+            "margin-desktop": "2rem"
+          },
+          "fontFamily": {
+            "body-md": ["Inter", "sans-serif"],
+            "headline-xl": ["Plus Jakarta Sans", "sans-serif"],
+            "label-sm": ["Inter", "sans-serif"],
+            "body-sm": ["Inter", "sans-serif"],
+            "headline-xl-mobile": ["Plus Jakarta Sans", "sans-serif"],
+            "body-lg": ["Inter", "sans-serif"],
+            "headline-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "label-md": ["Inter", "sans-serif"],
+            "label-eta": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-md": ["Plus Jakarta Sans", "sans-serif"],
+            "label-lg": ["Inter", "sans-serif"]
+          },
+          "fontSize": {
+            "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "headline-xl": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }],
+            "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+            "headline-xl-mobile": ["26px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "800" }],
+            "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "headline-sm": ["16px", { "lineHeight": "24px", "fontWeight": "600" }],
+            "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "label-eta": ["18px", { "lineHeight": "22px", "fontWeight": "800" }],
+            "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "700" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-family: 'Material Symbols Outlined';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 20px;
+      line-height: 1;
+      display: inline-block;
+      white-space: nowrap;
+      word-wrap: normal;
+      direction: ltr;
+      -webkit-font-smoothing: antialiased;
+      vertical-align: middle;
+    }
+    /* Ambient Civic Depth Shadows */
+    .shadow-ambient {
+      box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04);
+    }
+    .shadow-ambient-lg {
+      box-shadow: 0 4px 12px -2px rgba(15, 23, 42, 0.08), 0 2px 6px -1px rgba(15, 23, 42, 0.04);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased min-h-screen flex flex-col justify-between items-center selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- Main Max-Width Wrapper for Mobile/Tablet sheet -->
+<div class="w-full max-w-screen-sm mx-auto min-h-screen flex flex-col bg-surface-container-lowest shadow-ambient border-x border-outline-variant/30">
+<!-- Top Minimal Utility Bar with Dishub Emblem -->
+<header class="w-full px-4 py-2.5 flex items-center justify-between border-b border-outline-variant/20 bg-surface-container-lowest sticky top-0 z-30">
+<div class="flex items-center space-x-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-md text-label-md text-on-surface font-semibold tracking-tight">Kemenhub &amp; Dishub Kab. Banyumas</span>
+</div>
+<div class="flex items-center space-x-1.5 text-on-surface-variant font-label-sm text-label-sm bg-surface-container-low px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[16px] text-primary" data-icon="verified">verified</span>
+<span>MaaS Terpadu v2.4</span>
+</div>
+</header>
+<!-- Hero Visual Section with Requested Image -->
+<section class="relative px-4 pt-3 pb-2">
+<div class="relative w-full aspect-[16/9] rounded-xl overflow-hidden shadow-ambient-lg border border-outline-variant/30 bg-surface-container">
+<img alt="Modern vibrant illustration of a city bus Trans Banyumas in Indonesia, blue and emerald green accents with clean white body, driving on an urban Indonesian street in Purwokerto, landmark Mount Slamet in soft hazy background, cheerful passengers, clean flat modern 3D vector illustration style, bright morning daylight, welcoming public transport concept" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA03OF6AO7Wtqs_u51y1UjQA4o99pI_Xpwrn50HNfwKGjVjKR137huaLc4zMLu5UYiXyd2R5lABmxPbSEuN0SzJ9KAoD8iZDknu868skupIrZg2CUi7PFoRjDzIc3w8bJGioNKUsbVaGrFmTYO7U7yN3_TQ313aGkM9euO2vnIvrMifvBVP5sVMXWmjwYZ1pU13kOgSjrRxoVlMBv9qTPybkjroqL2KeKbEJravXj9W0ZusK9-EI9xc"/>
+<!-- Subtle Top Gradient Overlay for Badge Pop -->
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-inverse-surface/20 to-transparent pointer-events-none"></div>
+<!-- Floating Official Badge Top-Left -->
+<div class="absolute top-3 left-3 bg-surface-container-lowest/95 backdrop-blur-md px-3 py-1.5 rounded-full shadow-ambient flex items-center space-x-1.5 border border-white/60">
+<span class="material-symbols-outlined text-primary text-[18px]" data-icon="directions_bus">directions_bus</span>
+<span class="font-label-sm text-label-sm text-primary tracking-normal">Trans Banyumas MaaS - Resmi Dishub Banyumas</span>
+</div>
+<!-- Live Status Floating Chip Bottom-Right -->
+<div class="absolute bottom-3 right-3 bg-secondary text-on-secondary px-2.5 py-1 rounded-full text-label-sm font-label-sm flex items-center space-x-1 shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed animate-ping"></span>
+<span>Koridor 1, 2, 3 Aktif</span>
+</div>
+</div>
+</section>
+<!-- Login & Welcome Card Canvas -->
+<main class="flex-1 px-4 sm:px-6 pt-3 pb-8">
+<!-- Welcome Header Stack -->
+<div class="mb-5">
+<div class="inline-flex items-center space-x-1.5 text-primary mb-1">
+<span class="material-symbols-outlined text-[18px]" data-icon="location_on">location_on</span>
+<span class="font-label-md text-label-md font-bold uppercase tracking-wider text-primary">Purwokerto • Banyumas</span>
+</div>
+<h1 class="font-headline-xl-mobile sm:font-headline-xl text-headline-xl-mobile sm:text-headline-xl text-on-surface font-extrabold tracking-tight">
+          Selamat Datang di Trans Banyumas
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1.5 leading-relaxed">
+          Solusi mobilitas terintegrasi bus &amp; angkutan pengumpan se-Kabupaten Banyumas.
+        </p>
+</div>
+<!-- Main Login Form -->
+<form class="space-y-4" onsubmit="event.preventDefault();">
+<!-- Input 1: Nomor HP / Email -->
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface mb-1.5" for="credential-input">
+            Nomor HP atau Email Terdaftar
+          </label>
+<div class="relative flex items-center rounded-lg border border-outline-variant bg-surface-container-lowest focus-within:border-primary focus-within:ring-2 focus-within:ring-primary/20 transition-all shadow-sm">
+<!-- Prefix Phone Code / Icon Combo -->
+<div class="flex items-center pl-3.5 pr-2 border-r border-outline-variant/50 text-on-surface-variant py-2.5">
+<span class="material-symbols-outlined text-primary mr-1 text-[20px]" data-icon="call">call</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">+62</span>
+</div>
+<input class="w-full border-none bg-transparent px-3 py-3 text-body-md font-body-md text-on-surface placeholder:text-outline/70 focus:outline-none focus:ring-0" id="credential-input" placeholder="812-3456-7890 atau email@banyumas.go.id" required="" type="text"/>
+</div>
+</div>
+<!-- Input 2: Kata Sandi / PIN Keamanan -->
+<div>
+<div class="flex items-center justify-between mb-1.5">
+<label class="font-label-lg text-label-lg text-on-surface" for="password-input">
+              Kata Sandi / PIN Akun
+            </label>
+<span class="font-label-sm text-label-sm text-outline">PIN 6-Digit / Sandi</span>
+</div>
+<div class="relative flex items-center rounded-lg border border-outline-variant bg-surface-container-lowest focus-within:border-primary focus-within:ring-2 focus-within:ring-primary/20 transition-all shadow-sm">
+<div class="pl-3.5 text-on-surface-variant flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-primary text-[20px]" data-icon="lock">lock</span>
+</div>
+<input class="w-full border-none bg-transparent px-3 py-3 text-body-md font-body-md text-on-surface placeholder:text-outline/70 focus:outline-none focus:ring-0" id="password-input" placeholder="Masukkan kata sandi akun MaaS" required="" type="password"/>
+<!-- Toggle Visibility Button -->
+<button aria-label="Lihat kata sandi" class="pr-3.5 text-on-surface-variant hover:text-primary transition-colors focus:outline-none" id="togglePasswordBtn" onclick="togglePasswordVisibility()" type="button">
+<span class="material-symbols-outlined text-[20px]" data-icon="visibility" id="pwdEyeIcon">visibility</span>
+</button>
+</div>
+</div>
+<!-- Checkbox Remember Me & Forgot Password Links -->
+<div class="flex items-center justify-between pt-1">
+<label class="flex items-center space-x-2.5 cursor-pointer select-none">
+<input checked="" class="w-4 h-4 rounded border-outline-variant text-primary focus:ring-primary focus:ring-offset-0 transition" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Ingat Saya</span>
+</label>
+<a class="font-label-md text-label-md text-primary font-bold hover:underline transition-colors" href="#lupa-sandi">
+            Lupa Kata Sandi?
+          </a>
+</div>
+<!-- Primary Action Button: Masuk Sekarang -->
+<button class="w-full h-12 bg-primary-container hover:bg-primary active:scale-[0.98] text-on-primary font-headline-sm text-headline-sm rounded-lg flex items-center justify-center space-x-2 shadow-ambient-lg transition-all duration-150 mt-2" type="submit">
+<span>Masuk Sekarang</span>
+<span class="material-symbols-outlined text-[20px]" data-icon="login">login</span>
+</button>
+</form>
+<!-- Quick Divider -->
+<div class="relative my-6">
+<div class="absolute inset-0 flex items-center">
+<div class="w-full border-t border-outline-variant/40"></div>
+</div>
+<div class="relative flex justify-center text-label-sm font-label-sm">
+<span class="bg-surface-container-lowest px-3 text-outline uppercase tracking-wider">
+            Atau masuk lebih cepat
+          </span>
+</div>
+</div>
+<!-- Alternative Fast Login Grid (Bento Style 3 Pillars) -->
+<div class="space-y-2.5">
+<!-- NIK / KTP Special Feature Button (Tarif Pelajar/Lansia Terverifikasi) -->
+<button class="w-full p-3 rounded-lg border-2 border-secondary/40 bg-surface-container-low hover:bg-secondary-fixed/20 active:scale-[0.99] transition-all flex items-center justify-between text-left group shadow-sm" type="button">
+<div class="flex items-center space-x-3">
+<div class="w-9 h-9 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]" data-icon="badge">badge</span>
+</div>
+<div>
+<div class="flex items-center space-x-1.5">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Masuk Cepat dengan NIK / KTP</span>
+<span class="bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-1.5 py-0.2 rounded text-[10px] font-bold">Subsidi Banyumas</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Khusus tarif pelajar, mahasiswa, lansia &amp; disabilitas</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary group-hover:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</button>
+<div class="grid grid-cols-2 gap-2.5">
+<!-- Masuk dengan Google -->
+<button class="h-11 px-3 rounded-lg border border-outline-variant bg-surface-container-lowest hover:bg-surface-container-low active:scale-95 transition-all flex items-center justify-center space-x-2 text-on-surface font-label-lg text-label-lg" type="button">
+<!-- Minimal SVG Google Icon -->
+<svg class="w-4 h-4" viewbox="0 0 24 24">
+<path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"></path>
+<path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"></path>
+<path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" fill="#FBBC05"></path>
+<path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" fill="#EA4335"></path>
+</svg>
+<span>Google</span>
+</button>
+<!-- Masuk dengan WhatsApp OTP -->
+<button class="h-11 px-3 rounded-lg border border-outline-variant bg-surface-container-lowest hover:bg-surface-container-low active:scale-95 transition-all flex items-center justify-center space-x-2 text-on-surface font-label-lg text-label-lg" type="button">
+<span class="material-symbols-outlined text-[#25D366] text-[20px]" data-icon="chat">chat</span>
+<span>WhatsApp</span>
+</button>
+</div>
+</div>
+<!-- Mode Tamu (Tanpa Akun) -->
+<div class="mt-4">
+<a class="w-full py-2.5 px-3 rounded-lg border border-dashed border-outline-variant text-on-surface-variant hover:text-primary hover:border-primary bg-surface-container-low/50 flex items-center justify-center space-x-2 transition-all active:scale-[0.99]" href="#jelajah-tamu">
+<span class="material-symbols-outlined text-[18px]" data-icon="explore">explore</span>
+<span class="font-label-lg text-label-lg font-semibold">Masuk Sebagai Tamu (Cek Rute &amp; Jadwal)</span>
+</a>
+</div>
+<!-- Sign Up Prompt Footer -->
+<div class="mt-6 text-center">
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Belum punya akun Trans Banyumas? 
+          <a class="text-primary font-bold hover:underline inline-flex items-center ml-1" href="#daftar">
+            Daftar Sekarang
+            <span class="material-symbols-outlined text-[16px] ml-0.5" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</p>
+</div>
+<!-- Official Security & Legal Notice -->
+<div class="mt-6 pt-4 border-t border-outline-variant/30 text-center">
+<div class="flex items-center justify-center space-x-1.5 text-outline mb-1.5">
+<span class="material-symbols-outlined text-[15px]" data-icon="lock_outline">lock_outline</span>
+<span class="font-label-sm text-label-sm">Dilindungi Enkripsi Standar Kemenhub RI</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline leading-tight">
+          Dengan masuk, Anda menyetujui Ketentuan Layanan, Penggunaan Tiket Elektronik, serta Kebijakan Privasi Dinas Perhubungan Kabupaten Banyumas.
+        </p>
+</div>
+</main>
+<!-- Bottom Municipal Transit Footer Pill -->
+<footer class="w-full py-3 px-4 bg-surface-container text-center border-t border-outline-variant/30">
+<div class="flex items-center justify-center space-x-4 text-outline font-label-sm text-label-sm">
+<span>Banyumas Smart City</span>
+<span>•</span>
+<span>Call Center 112 / WhatsApp Dishub</span>
+<span>•</span>
+<span>Tarif Integrasi 2025</span>
+</div>
+</footer>
+</div>
+<!-- Micro-interaction script for Password Peek -->
+<script>
+    function togglePasswordVisibility() {
+      const pwdInput = document.getElementById('password-input');
+      const eyeIcon = document.getElementById('pwdEyeIcon');
+      
+      if (pwdInput.type === 'password') {
+        pwdInput.type = 'text';
+        eyeIcon.textContent = 'visibility_off';
+      } else {
+        pwdInput.type = 'password';
+        eyeIcon.textContent = 'visibility';
+      }
+    }
+  </script>
+</body></html>

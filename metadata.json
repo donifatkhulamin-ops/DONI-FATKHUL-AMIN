@@ -1,0 +1,6 @@
+{
+  "name": "Trans Banyumas MaaS",
+  "description": "Aplikasi Mobilitas Terpadu (MaaS) Trans Banyumas - Rencanakan perjalanan, live tracking bus, tiket digital QRIS, dan integrasi angkutan feeder antar moda Kabupaten Banyumas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

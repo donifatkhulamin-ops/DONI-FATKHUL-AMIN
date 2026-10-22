@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Live Tracking Trans Banyumas</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-tint": "#3755c3",
+            "inverse-on-surface": "#eef0ff",
+            "primary-fixed": "#dde1ff",
+            "on-background": "#131b2e",
+            "primary": "#00288e",
+            "surface-container": "#eaedff",
+            "inverse-surface": "#283044",
+            "secondary": "#006c4a",
+            "surface-bright": "#faf8ff",
+            "tertiary-fixed-dim": "#ffb95f",
+            "outline": "#757684",
+            "surface-container-lowest": "#ffffff",
+            "on-tertiary": "#ffffff",
+            "surface-variant": "#dae2fd",
+            "background": "#faf8ff",
+            "tertiary": "#4c2e00",
+            "surface-container-low": "#f2f3ff",
+            "error-container": "#ffdad6",
+            "on-error": "#ffffff",
+            "secondary-fixed-dim": "#68dba9",
+            "on-primary": "#ffffff",
+            "on-secondary-fixed-variant": "#005137",
+            "tertiary-fixed": "#ffddb8",
+            "on-tertiary-fixed": "#2a1700",
+            "tertiary-container": "#6b4200",
+            "on-tertiary-container": "#ffa929",
+            "inverse-primary": "#b8c4ff",
+            "outline-variant": "#c4c5d5",
+            "on-tertiary-fixed-variant": "#653e00",
+            "on-secondary": "#ffffff",
+            "on-surface-variant": "#444653",
+            "surface": "#faf8ff",
+            "surface-container-highest": "#dae2fd",
+            "secondary-fixed": "#85f8c4",
+            "on-error-container": "#93000a",
+            "on-secondary-fixed": "#002114",
+            "secondary-container": "#82f5c1",
+            "on-secondary-container": "#00714e",
+            "primary-fixed-dim": "#b8c4ff",
+            "on-surface": "#131b2e",
+            "primary-container": "#1e40af",
+            "surface-dim": "#d2d9f4",
+            "on-primary-fixed": "#001453",
+            "surface-container-high": "#e2e7ff",
+            "on-primary-fixed-variant": "#173bab",
+            "on-primary-container": "#a8b8ff",
+            "error": "#ba1a1a"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-xs": "0.25rem",
+            "gutter-mobile": "0.75rem",
+            "margin-desktop": "2rem",
+            "gutter": "1rem",
+            "margin": "1rem",
+            "space-sm": "0.5rem",
+            "space-md": "0.75rem",
+            "space-2xl": "2rem",
+            "space-lg": "1rem",
+            "space-xl": "1.5rem"
+          },
+          "fontFamily": {
+            "label-md": ["Inter"],
+            "headline-xl-mobile": ["Plus Jakarta Sans"],
+            "label-eta": ["Plus Jakarta Sans"],
+            "body-sm": ["Inter"],
+            "label-sm": ["Inter"],
+            "headline-xl": ["Plus Jakarta Sans"],
+            "headline-md": ["Plus Jakarta Sans"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "label-lg": ["Inter"],
+            "body-md": ["Inter"],
+            "body-lg": ["Inter"],
+            "headline-sm": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+            "headline-xl-mobile": ["26px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "800"}],
+            "label-eta": ["18px", {"lineHeight": "22px", "fontWeight": "800"}],
+            "body-sm": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+            "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700"}],
+            "headline-xl": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+            "headline-md": ["20px", {"lineHeight": "28px", "fontWeight": "700"}],
+            "headline-lg": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700"}],
+            "label-lg": ["14px", {"lineHeight": "20px", "fontWeight": "600"}],
+            "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+            "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+            "headline-sm": ["16px", {"lineHeight": "24px", "fontWeight": "600"}]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-family: 'Material Symbols Outlined';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 20px;
+      line-height: 1;
+      display: inline-block;
+      white-space: nowrap;
+      word-wrap: normal;
+      direction: ltr;
+      -webkit-font-feature-settings: 'liga';
+      -webkit-font-smoothing: antialiased;
+    }
+    @keyframes pulse-ring {
+      0% { transform: scale(0.95); opacity: 0.8; }
+      50% { transform: scale(1.3); opacity: 0.2; }
+      100% { transform: scale(0.95); opacity: 0.8; }
+    }
+    .ping-slow {
+      animation: pulse-ring 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .custom-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface antialiased font-body-md select-none">
+<!-- Main Mobile App Shell Centered -->
+<div class="relative w-full max-w-screen-sm mx-auto min-h-screen bg-surface-bright flex flex-col justify-between overflow-x-hidden shadow-2xl">
+<!-- Top Navigation Header (Shared Component: TopAppBar) -->
+<header class="sticky top-0 z-40 flex justify-between items-center w-full max-w-screen-sm mx-auto px-4 py-3 bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-space-sm">
+<button aria-label="Lokasi Terkini" class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-surface-container active:scale-95 transition-transform duration-150 text-primary" type="button">
+<span class="material-symbols-outlined" data-icon="location_on" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</button>
+<div>
+<h1 class="text-headline-sm font-headline-sm text-primary font-bold tracking-tight">Trans Banyumas</h1>
+<p class="text-label-sm font-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary inline-block"></span> Sistem Aktif Purwokerto
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<button aria-label="Refresh Data GPS" class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-surface-container active:scale-95 transition-transform duration-150 text-on-surface-variant" type="button">
+<span class="material-symbols-outlined" data-icon="sync">sync</span>
+</button>
+<button aria-label="Pemberitahuan" class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-surface-container active:scale-95 transition-transform duration-150 text-on-surface-variant" type="button">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+</div>
+</header>
+<!-- Corridors Selector Ribbon -->
+<section class="bg-surface-container-lowest px-4 pb-3 pt-1 border-b border-outline-variant/30 z-30 sticky top-[56px] shadow-sm">
+<div class="flex items-center justify-between mb-2">
+<span class="text-label-sm font-label-sm text-on-surface-variant font-bold tracking-wider">KORIDOR PILIHAN</span>
+<span class="text-label-sm font-label-sm text-primary font-bold flex items-center gap-0.5">
+          Semua Koridor <span class="material-symbols-outlined" style="font-size: 14px;">arrow_forward_ios</span>
+</span>
+</div>
+<div class="flex items-center gap-2 overflow-x-auto custom-scrollbar pb-1">
+<!-- Active Corridor 1 -->
+<button class="flex-shrink-0 flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary-container text-surface-container-lowest font-label-md text-label-md shadow-sm active:scale-95 transition-transform" type="button">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container"></span>
+<span>Koridor 1: Bulupitu - Pon</span>
+<span class="material-symbols-outlined text-surface-container-lowest" style="font-size: 16px;">check_circle</span>
+</button>
+<!-- Inactive Corridor 2 -->
+<button class="flex-shrink-0 flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant border border-outline-variant/50 font-label-md text-label-md hover:bg-surface-container active:scale-95 transition-transform" type="button">
+<span class="w-2.5 h-2.5 rounded-full bg-[#2563EB]"></span>
+<span>Koridor 2: Notog - Baturraden</span>
+</button>
+<!-- Inactive Corridor 3 -->
+<button class="flex-shrink-0 flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant border border-outline-variant/50 font-label-md text-label-md hover:bg-surface-container active:scale-95 transition-transform" type="button">
+<span class="w-2.5 h-2.5 rounded-full bg-[#D97706]"></span>
+<span>Koridor 3: Kebondalem - Tambak</span>
+</button>
+</div>
+</section>
+<!-- Interactive Map Canvas Workspace -->
+<main class="relative flex-1 w-full bg-[#e8edf5] overflow-hidden min-h-[580px] pb-96">
+<!-- Vector Styled Transit Base Map Simulation -->
+<div class="absolute inset-0 z-0 bg-[#eef2f9] pointer-events-none opacity-95">
+<!-- Street Grid Canvas Pattern -->
+<svg class="w-full h-full" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="60" id="grid-subtle" patternunits="userSpaceOnUse" width="60">
+<path d="M 60 0 L 0 0 0 60" fill="none" stroke="#d5deec" stroke-width="1.2"></path>
+</pattern>
+<lineargradient id="corridor-gradient" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#1e40af"></stop>
+<stop offset="100%" stop-color="#3755c3"></stop>
+</lineargradient>
+</defs>
+<rect fill="url(#grid-subtle)" height="100%" width="100%"></rect>
+<!-- Park / Civic Zones -->
+<rect fill="#d9f0df" height="110" rx="16" stroke="#b6e3c0" stroke-width="1.5" width="130" x="140" y="240"></rect>
+<text fill="#2d6a4f" font-family="Inter" font-size="10" font-weight="600" x="175" y="295">Alun-Alun</text>
+<rect fill="#e2e8f0" height="140" rx="12" stroke="#cbd5e1" stroke-width="1" width="90" x="20" y="80"></rect>
+<text fill="#64748b" font-family="Inter" font-size="9" font-weight="600" x="32" y="150">Kawasan Unsoed</text>
+<!-- Primary Arterial Roads -->
+<!-- Jl. Jenderal Sudirman -->
+<path d="M -40 295 L 480 295" stroke="#ffffff" stroke-linecap="round" stroke-width="18"></path>
+<path d="M -40 295 L 480 295" stroke="#cbd5e1" stroke-dasharray="2 0" stroke-linecap="round" stroke-width="18"></path>
+<path d="M -40 295 L 480 295" stroke="#ffffff" stroke-linecap="round" stroke-width="14"></path>
+<!-- Jl. Masjid / Alun-alun axis -->
+<path d="M 205 -20 L 205 600" stroke="#ffffff" stroke-linecap="round" stroke-width="16"></path>
+<path d="M 205 -20 L 205 600" stroke="#cbd5e1" stroke-dasharray="2 0" stroke-linecap="round" stroke-width="16"></path>
+<path d="M 205 -20 L 205 600" stroke="#ffffff" stroke-linecap="round" stroke-width="12"></path>
+<!-- Jl. Gatot Subroto Diagonals -->
+<path d="M 0 100 Q 180 180 340 100" fill="none" stroke="#ffffff" stroke-width="12"></path>
+<!-- Trans Banyumas Koridor 1 Real-time Track Line -->
+<!-- Background glow line -->
+<path d="M 30 110 L 205 295 L 390 295 L 440 450" fill="none" opacity="0.7" stroke="#93c5fd" stroke-linecap="round" stroke-linejoin="round" stroke-width="9"></path>
+<!-- Active Line -->
+<path d="M 30 110 L 205 295 L 390 295 L 440 450" fill="none" stroke="url(#corridor-gradient)" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"></path>
+<!-- Walking Path Dotted line to user -->
+<path d="M 205 295 L 205 385 L 260 385" fill="none" stroke="#444653" stroke-dasharray="4 4" stroke-width="2.5"></path>
+</svg>
+</div>
+<!-- Live GPS Demonstration Status Bar Overlay -->
+<div class="relative z-10 px-4 pt-3 flex justify-between items-start">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-inverse-surface/85 backdrop-blur-md text-inverse-on-surface shadow-md">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed animate-ping"></span>
+<span class="w-2 h-2 rounded-full bg-secondary-fixed -ml-3"></span>
+<span class="text-label-sm font-label-sm tracking-wide">Data Simulasi Demonstrasi GPS Real-time</span>
+</div>
+<!-- Map Controls Floating Stack -->
+<div class="flex flex-col gap-2">
+<button aria-label="Pusatkan Lokasi Saya" class="w-10 h-10 rounded-xl bg-surface-container-lowest text-primary shadow-md flex items-center justify-center hover:bg-surface-container active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined" data-icon="my_location" style="font-variation-settings: 'FILL' 1;">my_location</span>
+</button>
+<button aria-label="Layers Map" class="w-10 h-10 rounded-xl bg-surface-container-lowest text-on-surface-variant shadow-md flex items-center justify-center hover:bg-surface-container active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined" data-icon="layers">layers</span>
+</button>
+</div>
+</div>
+<!-- MAP MARKER: User Current Location Pin -->
+<div class="absolute z-20 left-[255px] top-[375px] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center pointer-events-none">
+<div class="relative flex items-center justify-center">
+<span class="absolute w-8 h-8 rounded-full bg-surface-tint opacity-30 ping-slow"></span>
+<span class="relative w-4 h-4 rounded-full bg-surface-tint border-2 border-surface-container-lowest shadow-md"></span>
+</div>
+<span class="mt-1 px-1.5 py-0.5 rounded bg-inverse-surface text-inverse-on-surface text-[10px] font-label-sm font-bold shadow-sm whitespace-nowrap">Anda (180m)</span>
+</div>
+<!-- MAP MARKER 1: Bus TB-104 (Sedang Berjalan) -->
+<div class="absolute z-20 left-[85px] top-[150px] -translate-x-1/2 -translate-y-1/2 group cursor-pointer">
+<div class="relative flex flex-col items-center">
+<!-- Live Status Tag -->
+<div class="px-2 py-1 rounded-lg bg-surface-container-lowest border border-outline-variant shadow-md flex items-center gap-1.5 whitespace-nowrap transform group-hover:scale-105 transition-transform">
+<span class="w-2 h-2 rounded-full bg-secondary inline-block"></span>
+<span class="text-label-sm font-label-sm text-primary font-bold">TB-104</span>
+<span class="text-[10px] text-on-surface-variant font-medium">(Sedang Berjalan)</span>
+</div>
+<!-- Bus Icon Badge with Heading Indicator -->
+<div class="mt-1 relative w-9 h-9 rounded-full bg-primary-container text-surface-container-lowest flex items-center justify-center shadow-lg border-2 border-surface-container-lowest">
+<span class="material-symbols-outlined" data-icon="directions_bus" style="font-size: 20px;">directions_bus</span>
+<span class="absolute -bottom-1 -right-1 w-3.5 h-3.5 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center text-[8px] font-bold">✓</span>
+</div>
+</div>
+</div>
+<!-- MAP MARKER 2: Bus TB-108 (Mendekati Halte Alun-Alun) -->
+<div class="absolute z-20 left-[165px] top-[260px] -translate-x-1/2 -translate-y-1/2 group cursor-pointer">
+<div class="relative flex flex-col items-center">
+<!-- Dynamic ETA Callout Card -->
+<div class="px-2.5 py-1 rounded-lg bg-primary-container text-surface-container-lowest shadow-xl flex items-center gap-1.5 whitespace-nowrap animate-bounce duration-1000">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+<span class="text-label-sm font-label-sm font-bold">TB-108</span>
+<span class="text-label-sm font-label-sm font-bold text-secondary-container">3 MNT</span>
+</div>
+<!-- Vehicle Avatar -->
+<div class="mt-1 relative w-10 h-10 rounded-full bg-primary text-surface-container-lowest flex items-center justify-center shadow-2xl border-2 border-surface-container-lowest ring-4 ring-primary-container/20">
+<span class="material-symbols-outlined" data-icon="directions_bus" style="font-size: 22px;">directions_bus</span>
+</div>
+<span class="text-[10px] font-label-sm font-bold text-on-surface mt-0.5 px-1 rounded bg-surface-container-lowest/80 backdrop-blur-xs">Mendekati Halte</span>
+</div>
+</div>
+<!-- MAP MARKER 3: Halte Alun-Alun Purwokerto (Focal Transit Stop) -->
+<div class="absolute z-20 left-[205px] top-[295px] -translate-x-1/2 -translate-y-1/2 cursor-pointer">
+<div class="relative flex flex-col items-center">
+<div class="w-8 h-8 rounded-full bg-surface-container-lowest border-4 border-primary shadow-xl flex items-center justify-center">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+</div>
+<div class="mt-1 px-2 py-0.5 rounded-md bg-surface-container-lowest/95 border border-outline-variant shadow-md text-center whitespace-nowrap">
+<p class="text-label-sm font-label-sm text-primary font-bold leading-tight">Halte Alun-Alun</p>
+<p class="text-[10px] text-on-surface-variant font-medium">Platform A</p>
+</div>
+</div>
+</div>
+<!-- MAP MARKER 4: Feeder Pickup Points (Grab & Gojek Shelter) -->
+<div class="absolute z-20 left-[270px] top-[280px] -translate-x-1/2 -translate-y-1/2">
+<div class="flex items-center gap-1.5 p-1 px-2 rounded-full bg-surface-container-lowest border border-secondary shadow-md hover:shadow-lg transition-shadow">
+<span class="w-5 h-5 rounded-full bg-[#00880C] text-white flex items-center justify-center text-[10px] font-bold">G</span>
+<span class="w-5 h-5 rounded-full bg-[#00B14F] text-white flex items-center justify-center text-[10px] font-bold">Gr</span>
+<div class="flex flex-col pr-1">
+<span class="text-[9px] font-bold text-on-surface leading-none">Shelter Antar Moda</span>
+<span class="text-[8px] text-secondary font-bold">8 Siap Jemput</span>
+</div>
+</div>
+</div>
+<!-- MAP MARKER 5: Halte Pasar Pon (Destination Node) -->
+<div class="absolute z-20 left-[390px] top-[295px] -translate-x-1/2 -translate-y-1/2 opacity-80">
+<div class="w-6 h-6 rounded-full bg-surface-container-lowest border-2 border-outline shadow-sm flex items-center justify-center">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+</div>
+<span class="text-[10px] font-medium text-on-surface-variant whitespace-nowrap -ml-2">Halte Pon</span>
+</div>
+</main>
+<!-- Floating Interactive Bottom Sheet Modal Card (Level 3 Elevation) -->
+<div class="fixed bottom-[58px] left-0 right-0 z-40 max-w-screen-sm mx-auto px-3 pb-2 pointer-events-auto">
+<div class="w-full bg-surface-container-lowest rounded-2xl border border-outline-variant/60 shadow-[0_12px_28px_-4px_rgba(15,23,42,0.18)] overflow-hidden transition-all duration-300">
+<!-- Sheet Handle Gripper -->
+<div class="w-full pt-2 pb-1 flex justify-center items-center bg-surface-container-lowest cursor-grab">
+<div class="w-12 h-1 rounded-full bg-outline-variant"></div>
+</div>
+<div class="px-4 pb-3">
+<!-- Station Title Header -->
+<div class="flex items-start justify-between border-b border-surface-container pb-2.5">
+<div class="flex items-start gap-2.5">
+<div class="w-9 h-9 rounded-xl bg-primary-fixed flex items-center justify-center text-primary mt-0.5">
+<span class="material-symbols-outlined" data-icon="storefront" style="font-variation-settings: 'FILL' 1;">storefront</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<h2 class="text-headline-sm font-headline-sm text-on-surface font-bold">Halte Alun-Alun Purwokerto</h2>
+<span class="material-symbols-outlined text-secondary" data-icon="verified" style="font-size: 18px;">verified</span>
+</div>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="text-label-sm font-label-sm text-on-surface-variant flex items-center gap-0.5">
+<span class="material-symbols-outlined" data-icon="directions_walk" style="font-size: 14px;">directions_walk</span>
+                    180 meter (2 menit jalan kaki)
+                  </span>
+<span class="text-outline-variant">•</span>
+<span class="text-label-sm font-label-sm text-secondary font-bold">Banyumas Hub</span>
+</div>
+</div>
+</div>
+<button aria-label="Favoritkan Halte" class="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:bg-surface-container" type="button">
+<span class="material-symbols-outlined" data-icon="bookmark_border">bookmark_border</span>
+</button>
+</div>
+<!-- Section: Bus Estimasi Kedatangan (ETA Cards Grid) -->
+<div class="pt-2.5">
+<div class="flex items-center justify-between mb-2">
+<span class="text-label-sm font-label-sm text-on-surface-variant font-bold tracking-wider">KEDATANGAN BUS REAL-TIME</span>
+<span class="text-[11px] font-label-sm text-secondary font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Live Tracking
+              </span>
+</div>
+<div class="space-y-2">
+<!-- Primary Next Bus Card -->
+<div class="p-3 rounded-xl bg-[#ecfdf5] border border-[#a7f3d0] flex items-center justify-between shadow-xs">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-[#059669] text-white flex flex-col items-center justify-center">
+<span class="material-symbols-outlined" data-icon="directions_bus" style="font-size: 18px;">directions_bus</span>
+<span class="text-[9px] font-bold leading-none">KOR 1</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">TB-108</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Arah Terminal Bulupitu</span>
+</div>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="text-label-sm font-label-sm text-[#065f46] font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined" data-icon="airline_seat_recline_normal" style="font-size: 14px;">airline_seat_recline_normal</span>
+                        Tersedia 12 Kursi (65%)
+                      </span>
+</div>
+</div>
+</div>
+<div class="text-right">
+<div class="inline-block px-2.5 py-1 rounded-full bg-[#059669] text-white font-label-eta text-label-eta tracking-tight shadow-sm">
+                    3 MENIT
+                  </div>
+<span class="block text-[10px] text-[#065f46] font-bold mt-0.5">Tepat Waktu</span>
+</div>
+</div>
+<!-- Secondary Next Bus Card -->
+<div class="p-2.5 px-3 rounded-xl bg-surface-container-low border border-outline-variant/40 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-variant text-primary flex items-center justify-center font-bold text-xs">
+                    K1
+                  </div>
+<div>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">TB-112</span>
+<span class="text-body-sm text-body-sm text-on-surface-variant ml-1.5">Koridor 1 Bulupitu</span>
+</div>
+</div>
+<div class="text-right">
+<span class="text-label-md font-label-md font-bold text-on-surface">14 Menit</span>
+<span class="block text-[10px] text-on-surface-variant">Kapasitas Longgar</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Section: Multimodal First-Mile / Last-Mile Hub Feeders -->
+<div class="mt-2.5 pt-2 border-t border-surface-container">
+<div class="flex items-center justify-between p-2 rounded-xl bg-surface-bright border border-secondary-container">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="two_wheeler" style="font-size: 18px;">two_wheeler</span>
+</div>
+<div>
+<h4 class="text-label-md font-label-md text-on-surface font-bold">Shelter Ojek Online & Angkot Alun-Alun</h4>
+<p class="text-body-sm text-body-sm text-on-surface-variant">Tersedia 8 armada Gojek/Grab siap jemput di gerbang timur</p>
+</div>
+</div>
+<button class="px-2.5 py-1 rounded-lg bg-surface-container-lowest text-primary text-label-sm font-label-sm font-bold border border-outline-variant hover:bg-surface-container active:scale-95 transition-transform whitespace-nowrap" type="button">
+                Pesan Feeder
+              </button>
+</div>
+</div>
+<!-- Quick Action Buttons -->
+<div class="mt-3 grid grid-cols-2 gap-2">
+<button class="w-full h-11 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-1.5 shadow-md active:scale-95 hover:bg-primary-container transition-all" type="button">
+<span class="material-symbols-outlined" data-icon="navigation" style="font-size: 18px;">navigation</span>
+<span>Petunjuk ke Halte</span>
+</button>
+<button class="w-full h-11 rounded-xl bg-surface-container-low border border-outline-variant/60 text-primary font-label-lg text-label-lg flex items-center justify-center gap-1.5 hover:bg-surface-container active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined" data-icon="map" style="font-size: 18px;">map</span>
+<span>Rute Lengkap</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Navigation Bar (Shared Component: BottomNavBar) -->
+<!-- Active Destination Tab: "Tracking" based on hierarchy & primary screen intent -->
+<nav aria-label="Navigasi Utama" class="fixed bottom-0 left-0 right-0 z-50 flex justify-around items-center w-full max-w-screen-sm mx-auto px-2 py-2 safe-area-inset-bottom bg-surface-container-lowest shadow-[0_-2px_6px_rgba(15,23,42,0.06)]">
+<!-- Tab 1: Dashboard -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1 hover:text-primary active:scale-95 transition-transform duration-150" type="button">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="text-label-sm font-label-sm mt-0.5">Dashboard</span>
+</button>
+<!-- Tab 2: Rencana -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1 hover:text-primary active:scale-95 transition-transform duration-150" type="button">
+<span class="material-symbols-outlined" data-icon="route">route</span>
+<span class="text-label-sm font-label-sm mt-0.5">Rencana</span>
+</button>
+<!-- Tab 3: Tracking (ACTIVE MANDATORY KEY EXECUTION) -->
+<button aria-current="page" class="flex flex-col items-center justify-center bg-primary-fixed text-on-primary-fixed rounded-full px-3 py-1 font-bold active:scale-95 transition-transform duration-150 shadow-xs" type="button">
+<span class="material-symbols-outlined" data-icon="directions_bus" style="font-variation-settings: 'FILL' 1;">directions_bus</span>
+<span class="text-label-sm font-label-sm mt-0.5">Tracking</span>
+</button>
+<!-- Tab 4: Tiket -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1 hover:text-primary active:scale-95 transition-transform duration-150" type="button">
+<span class="material-symbols-outlined" data-icon="qr_code_scanner">qr_code_scanner</span>
+<span class="text-label-sm font-label-sm mt-0.5">Tiket</span>
+</button>
+<!-- Tab 5: Antar Moda -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1 hover:text-primary active:scale-95 transition-transform duration-150" type="button">
+<span class="material-symbols-outlined" data-icon="alt_route">alt_route</span>
+<span class="text-label-sm font-label-sm mt-0.5">Antar Moda</span>
+</button>
+</nav>
+</div>
+<!-- Interactive Map Micro-Interactions Script -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Micro interaction feedback for corridor buttons
+      const corridorButtons = document.querySelectorAll('section button');
+      corridorButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          // Visual acknowledgment on tap
+          btn.classList.add('scale-95');
+          setTimeout(() => btn.classList.remove('scale-95'), 150);
+        });
+      });
+    });
+  </script>
+</body></html>
